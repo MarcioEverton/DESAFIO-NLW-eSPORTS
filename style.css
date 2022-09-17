@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(assets/Fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position:top center;
+    background-color: #121214;
+    font-family:'Montserrat', sans-serif;;
+}
+header:hover{
+    transform: scale(1.1);
+}
+header{
+    text-align: center;
+    padding: 32px 0;
+    animation: backwards fromTop .7s ;
+    transition: .3s;
+}
+header img{
+    border-radius: 50%;
+    width: 100%;
+}
+header div{
+    width: 120px;
+    background-image: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%);
+    padding:4px ;
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+
+}
+
+ul{
+    list-style: none;
+    display: grid;   
+}
+
+
+main{
+    max-width:520px ;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    
+    gap: 24px;
+    margin-bottom:7px ;
+    
+
+    
+}
+section{
+    background-image: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%);
+    padding-top:4px ;
+    border-radius: 10px;
+    animation: backwards fromBot .7s;
+    transition: 3.s;
+ 
+}
+section div{
+    padding:32px;
+    padding-top: 24px;
+    background: #262629;
+    border-radius: 8px;
+    
+}
+
+section div h2{
+    color: white;
+    font-weight: 900;
+    margin-bottom: 8px;
+    
+}
+section p{
+    color: #c1c1c1;
+    margin-bottom: 24px;
+}
+
+section ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    
+}
+section ul li{
+    transition: .3s;
+}
+section ul li img{
+  border-radius: 16px;  
+  width: 100px;
+  gap: 16px;
+  border: 1px solid #555555; 
+  
+}
+
+section ul li:hover{
+    transform: scale(1.1);
+}
+
+/* animation */
+
+@keyframes fromTop{
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes fromBot {
+    from{
+        transform: translateY(100px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
